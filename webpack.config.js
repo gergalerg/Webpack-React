@@ -10,6 +10,11 @@ module.exports = {
         path: __dirname + '/app',
         filename: "bundle.js"
     },
+    entry: "./test.js",
+    output: {
+        path: __dirname + '/app',
+        filename: "test.js"
+    },
     module: {
         loaders: [
         { test: /\.css$/, include: __dirname, loader: "style!css"},
